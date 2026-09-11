@@ -1,0 +1,20 @@
+Origin: AutoFlow
+Label: AutoFlow
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm64
+Components: main
+Description: AutoFlow 私有测试源
+MD5Sum:
+ 19c540557ddce532344876c89e41f101 806 Packages
+ 959919a0dfaf73660710dd022636d493 546 Packages.bz2
+ 60a5bed7dca294799607127073059df1 469 Packages.gz
+SHA1:
+ c6c78c7f82dd45ad0a6c95e781ce8cad65e00a45 806 Packages
+ 2a7f5bc4f14c5c3d47685dac6d0b184c9512fe40 546 Packages.bz2
+ eb4a0ce4074b251992fc958094742104e15f1297 469 Packages.gz
+SHA256:
+ 42403925bc5b1227eae0d28079cdcfd09a38128828ea6747e3b6475241b6471d 806 Packages
+ 3043702514bbe6b3e1773eebcd09a117cf5fc3cb6e8e00c34a9c3a373abca77d 546 Packages.bz2
+ f9362ab699a10d3757d2e3d185e0c1ba43911c5e4fa0ded143db4fea688d42fb 469 Packages.gz

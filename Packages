@@ -1,0 +1,18 @@
+Package: com.codex.autoflow
+Name: AutoFlow
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Description: Local-only gesture recorder and macro player for Dopamine rootless.
+Section: Tweaks
+Maintainer: Local User
+Author: Codex
+Depends: firmware (>= 15.0), mobilesubstrate, com.rpetrich.rocketbootstrap
+Installed-Size: 128
+Filename: ./com.codex.autoflow_0.1.0_iphoneos-arm64.deb
+Size: 25534
+MD5sum: a7a770284c47ef52522e99579d947d16
+SHA1: 508643ed0b8a0abac3c8ebb30e02e412bc569b6b
+SHA256: d7bcc18bc4ac678801dd2e670b08b313e8d1567237d6bf2787831ff5191b21ff
+Depiction: https://x2664208886-collab.github.io/autoflow-repo/depictions/com.codex.autoflow.html
+SileoDepiction: https://x2664208886-collab.github.io/autoflow-repo/depictions/com.codex.autoflow.html
+Homepage: https://x2664208886-collab.github.io/autoflow-repo/

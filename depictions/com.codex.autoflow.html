@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AutoFlow</title>
+<style>
+  :root {
+    --bg:#000; --card:#1c1c1e; --line:#2c2c2e;
+    --fg:#f2f2f7; --dim:#8e8e93; --accent:#0a84ff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f2f2f7; --card:#fff; --line:#e5e5ea; --fg:#1c1c1e; --dim:#6c6c70; }
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:24px 20px 48px;
+    background:var(--bg); color:var(--fg);
+    font:16px/1.55 -apple-system,"SF Pro Text","PingFang SC",system-ui,sans-serif;
+  }
+  .wrap { max-width:640px; margin:0 auto; }
+  header { text-align:center; padding:16px 0 28px; }
+  .icon {
+    width:88px; height:88px; margin:0 auto 14px; border-radius:20px;
+    background:linear-gradient(160deg,#0a84ff,#0040a0);
+    display:flex; align-items:center; justify-content:center;
+    font-size:34px; font-weight:700; color:#fff; letter-spacing:-1px;
+    box-shadow:0 8px 24px rgba(10,132,255,.35);
+  }
+  h1 { margin:0 0 4px; font-size:26px; letter-spacing:-.4px; }
+  .sub { color:var(--dim); font-size:14px; margin:0; }
+  .card {
+    background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:16px 18px; margin-bottom:14px;
+  }
+  .card h2 {
+    margin:0 0 10px; font-size:13px; font-weight:600;
+    text-transform:uppercase; letter-spacing:.6px; color:var(--dim);
+  }
+  .row {
+    display:flex; justify-content:space-between; gap:16px;
+    padding:7px 0; border-bottom:1px solid var(--line); font-size:15px;
+  }
+  .row:last-child { border-bottom:0; }
+  .row .k { color:var(--dim); flex:0 0 auto; }
+  .row .v { text-align:right; word-break:break-all; }
+  code {
+    font:13px/1.5 ui-monospace,"SF Mono",Menlo,monospace;
+    background:rgba(127,127,127,.16); padding:2px 6px; border-radius:5px;
+  }
+  pre {
+    background:rgba(127,127,127,.12); border-radius:10px;
+    padding:12px 14px; overflow-x:auto; margin:10px 0 0;
+    font:13px/1.6 ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  pre code { background:none; padding:0; }
+  .note {
+    border-left:3px solid var(--accent); padding:10px 0 10px 14px;
+    color:var(--dim); font-size:14px; margin:0;
+  }
+  ol,ul { margin:0; padding-left:22px; }
+  li { margin-bottom:7px; }
+  a { color:var(--accent); }
+  footer { text-align:center; color:var(--dim); font-size:12px; margin-top:28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="icon">AF</div>
+    <h1>AutoFlow</h1>
+    <p class="sub">本地手势录制与宏回放 &middot; Dopamine rootless</p>
+  </header>
+
+  <div class="card">
+    <h2>软件包信息</h2>
+    <div class="row"><span class="k">标识</span><span class="v"><code>com.codex.autoflow</code></span></div>
+    <div class="row"><span class="k">版本</span><span class="v">0.1.0</span></div>
+    <div class="row"><span class="k">架构</span><span class="v">iphoneos-arm64</span></div>
+    <div class="row"><span class="k">分区</span><span class="v">Tweaks</span></div>
+    <div class="row"><span class="k">适用</span><span class="v">iOS 15.0+ / 无根越狱</span></div>
+  </div>
+
+  <div class="card">
+    <h2>依赖</h2>
+    <ul>
+      <li><code>ElleKit</code> &mdash; 请先在 Sileo 中安装并更新</li>
+      <li><code>RocketBootstrap</code> &mdash; 标识 <code>com.rpetrich.rocketbootstrap</code></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>安装</h2>
+    <ol>
+      <li>安装上面的两个依赖</li>
+      <li>在本页安装 AutoFlow</li>
+      <li>安装完成后执行 <code>sbreload</code>（或重启用户空间）</li>
+    </ol>
+    <p class="note" style="margin-top:12px">安装过程中请不要打开银行、支付或密码管理类 App。</p>
+  </div>
+
+  <div class="card">
+    <h2>紧急停止</h2>
+    <p style="margin:0">任何时候在 1.25 秒内连续按三次<b>音量加</b>，立即中止回放。</p>
+  </div>
+
+  <div class="card">
+    <h2>卸载</h2>
+    <pre><code>sudo dpkg -r com.codex.autoflow
+sbreload</code></pre>
+  </div>
+
+  <footer>
+    AutoFlow 0.1.0 &middot; 私有测试源，未公开分发<br>
+    SHA-256 <code>d7bcc18bc4ac6788…</code>
+  </footer>
+
+</div>
+</body>
+</html>
